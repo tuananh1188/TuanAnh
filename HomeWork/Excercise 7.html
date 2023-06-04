@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My first proper HTML page</title>
+</head>
+
+<body>
+	<h1>Hello world!</h1>
+	<p>My first web page.</p>
+	<script>
+		var long = { name: "Long", address: "8 Bat Dan", loan: 100 };
+
+		var ngoc = { name: "Ngoc", address: "173 Nguyen Tu Gian", loan: 0 };
+
+		var nam = { name: "Nam", address: "10 Thien Hien", loan: 1100 };
+
+		var duong = { name: "Duong", address: "360 Xa Dan", loan: 0 };
+
+		var tuan = { name: "Tuan", address: "46 Hang Non", loan: 1500 };
+
+		var friends = [long, ngoc, nam, duong, tuan];
+
+		for (var x = 0; x < friends.length; x++) { if (friends[x].loan > 0) { console.log(" friends who borrow my money " + " : " + friends[x].name) } };
+
+		for (var y = 0; y < friends.length; y++) { if (friends[y].loan == 0) { console.log(" friends who don't borrow my money " + " : " + friends[y].name) } };
+
+		var sum = 0;
+		for (var z = 0; z < friends.length; z++) { if (sum += friends[z].loan) { console.log(" total loan amount " + " : " + sum) } };
+
+		var max = friends[0].loan;
+		for (var a = 0; a < friends.length; a++) { if (max < friends[a].loan) (max = friends[a].loan) };
+		console.log(" max = " + max);
+
+
+		var min = friends[0].loan;
+		for (var b = 0; b < friends.length; b++) { if (min > friends[b].loan && friends[b].loan > 0) { min = friends[b].loan } };
+		console.log(" min = " + min);
+
+
+		for (var c = 0; c < friends.length; c++) { if (friends[c].loan > 1000) { console.log(" friends who borrow my money over 1000 " + " : " + friends[c].name) } };
+
+
+	</script>
+</body>
+
+</html>

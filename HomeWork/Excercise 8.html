@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My first proper HTML page</title>
+</head>
+
+<body>
+	<h1>Hello world 123 !</h1>
+	<p>My first web page.</p>
+	<script>
+		for (var i = 0; i <= 100; i++) { if (i % 2 == 0) { console.log(i) } };
+
+		var animals = ["Cat", "Fish", "Lemur", "Kodomo Dragon"];
+
+
+		for (var i = 0; i < animals.length; i++) { animals[i] = "Awesome " + animals[i] };
+		console.log(animals);
+
+		for (var i = 0; i < animals.length / 2; i++) {
+			var temp = animals[i];
+			var temp2 = animals.length - (i + 1);
+			animals[i] = animals[temp2];
+			animals[temp2] = temp;
+			console.log(i);
+			console.log(temp);
+			console.log(temp2);
+			console.log(animals[i]);
+			console.log(animals[temp2]);
+
+		}
+		console.log(animals);
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My first proper HTML page</title>
+</head>
+
+<body>
+	<h1>Hello world 123 !</h1>
+	<p>My first web page.</p>
+	<script>
+
+		var avengers = function (name, weapon,skill) {
+			this.name = name;
+			this.weapon = weapon;
+			this.skill = skill;
+			console.log(this.name + " " + " ! My Weapon is " + this.weapon + " ! " + this.skill + " ! ");
+		};
+		var spiderman = new avengers("SpiderMan", "SpiderGloves","spider silk swing");
+		var xmen = new avengers("Xmen", "Claws","jump for bait");
+		var captain = new avengers("CaptainAmerica", "Shield","throw and catch shields");
+		var ironman = new avengers("IronMan", "Armor" ,"fly and shoot laser");
+		avengers.prototype.fight = function() {
+			console.log("fight")
+		} ;
+		spiderman.fight();
+		avengers
+
+
+
+
+	</script>
+</body>
+
+</html>
